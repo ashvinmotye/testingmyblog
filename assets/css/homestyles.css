@@ -1,0 +1,191 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+nav {
+	width: 50%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 50px 0;
+	/*background: url("../images/ashvinmotye.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;*/
+	background-color: #888888;
+	background: url("../images/shattered.png");
+	background-size: 300px;
+}
+
+div#mycontent {
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+}
+
+div#mycontent img {
+	width: 200px;
+	border-radius: 100%;
+	border: 10px solid white;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+div#mycontent h1 {
+	margin: 15px 0 25px;
+	color: #222222;
+	font-weight: lighter;
+}
+
+div#mycontent a.pagelinks {
+	text-decoration: none;
+	padding: 8px 13px;
+	margin: 5px;
+	background: white;
+	color: #222;
+	font-size: 14px;
+	cursor: pointer;
+/* 	border-radius: 5px; */
+	font-weight: lighter;
+	outline: none;
+/* 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3); */
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	/*transition: all 0.2s ease-in-out;*/
+}
+
+div#mycontent a.pagelinks:hover {
+/* 	background: #2196F3; */
+/* 	color: #eee; */
+/* 	border-radius: 0;
+	padding: 13px 13px; */
+	/*border-bottom-color: #2196F3;*/
+}
+
+.sliding-middle-out {
+	display: inline-block;
+	position: relative;
+}
+
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 2px;
+	width: 0px;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: #2196F3;
+}
+
+div#socialmedia {
+	margin-top: 30px;
+}
+
+div#socialmedia a.sociallinks {
+	margin: 0 5px;
+	color: rgba(130, 130, 130, 0.99);
+	height: 25px;
+	width: 25px;
+	display: inline-block;
+	border-radius: 25%;
+	border: 1px solid rgba(130, 130, 130, 0.99);
+	transition: all 0.2s ease-in-out;
+}
+
+div#socialmedia a.sociallinks:hover {
+	color: white;
+	cursor: pointer;
+}
+
+div#socialmedia a#facebook:hover {
+	background-color: #3B5998;
+	border-color: #3B5998;
+}
+
+div#socialmedia a#linkedin:hover {
+	background-color: #007BB6;
+	border-color: #007BB6;
+}
+
+div#socialmedia a#instagram:hover {
+	background: -webkit-radial-gradient(-25px 25px, #ffda75 18%,#ff3a49 43%,#ff3a49 50%,#e518a1 70%,#6634e1 100%);
+	border-color: white;
+}
+
+div#socialmedia a#twitter:hover {
+	background-color: #00b6f1;
+	border-color: #00b6f1;
+}
+
+html, body {
+	height: 100%;
+}
+
+section#maincontent {
+	width: 50%;
+	position: relative;
+	color: #EEE;
+	left: 50%;
+	height: 100%;
+}
+
+section.card {
+	height: 100%;
+	padding: 50px 0;
+	position: relative;
+}
+
+.centeraligner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+div#scroll {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #848484;
+	width: 100%;
+	text-align: center;
+}
+
+i#scrollicon {
+	padding: 1px 5px;
+	border: 1px solid #848484;
+	border-radius: 25%;
+}
+
+span#scrolldown {
+	display: block;
+	font-size: 10px;
+	padding-top: 3px;
+}
+
+section.card:nth-of-type(odd) {
+	background-color: #263238;
+}
+
+section.card:nth-of-type(even) {
+	background-color: #03A9F4;
+}
