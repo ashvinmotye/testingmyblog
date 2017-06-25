@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Drawing App</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div id="toolbar">
+		<div class="section">
+			<div id="rad">
+				Thickness
+				<div class="radcontrol" id="decrad">-</div>
+				<span id="radval">10</span>
+				<div class="radcontrol" id="incrad">+</div>
+			</div>
+
+			<div id="buttons">
+				<div id="clear">Clear</div>
+				<div id="save">Save</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<div id="colors"></div>
+		</div>
+
+		<div class="section"></div>	
+	</div>
+
+	<canvas>
+		Sorry, your browser does not support our app.<br>Please try updating.
+	</canvas>
+
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="radius.js"></script>
+<script type="text/javascript" src="colors.js"></script>
+</body>
+</html>
