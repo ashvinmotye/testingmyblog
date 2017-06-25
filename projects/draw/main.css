@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+		 box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-family: 'Open Sans';
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	font-size: 12px;
+	text-align: center;
+}
+
+canvas {
+	display: block;
+}
+
+#toolbar {
+	width: 100%;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	background-color: #1f1f1f;
+	color: white;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+	line-height: 18px;
+}
+
+.section {
+	display: inline-block;
+	width: 33%;
+}
+
+#rad {
+	padding-bottom: 10px;
+}
+
+#clear, #save {
+	display: inline-block;
+	margin: 0 20px;
+	padding: 5px 7px;
+	border: 1px solid white;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.1s ease-in-out;
+}
+
+#clear:hover, #save:hover {
+	background-color: white;
+	color: #1f1f1f;
+}
+
+.radcontrol {
+	width: 30px;
+	height: 30px;
+	border-radius: 11px;
+	border: 1px solid white;
+	margin: 0 5px;
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.swatch {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	cursor: pointer;
+	box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.swatch.active {
+	border: 2px solid white;
+	transform: scale(1.1);
+}
+
+.swatch:hover {
+	transform: scale(1.1);
+}
